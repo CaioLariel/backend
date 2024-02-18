@@ -7,6 +7,7 @@ export const listUsers = () => {
 
 
 export const createUser = (user) =>{
-    console.log(user)
-    // users.push(user)
+    users.push(user)
+    console.log("usuario inserido")
 }
+

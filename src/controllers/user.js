@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { listUsers,createUser } from "../services/user";
+import { listUsers, createUser } from "../services/user";
  
 
  const router = Router()
@@ -10,7 +10,7 @@ import { listUsers,createUser } from "../services/user";
  })
 
  router.post('/', async(req, res) =>{
-    const  user = await createUser(req.body)
+    const user = await createUser(req.body)
     res.status(201).send(user)
  })
 
